@@ -1,0 +1,32 @@
+name: BulletLineMainSystem
+main: sqmeru\BulletLineMainSystem\BulletLineMainSystem
+load: POSTWORLD
+
+api: 3.14.0
+version: 1.0.0
+
+author: sqmeru
+website: https://github.com/sqmeru/BulletLineMainSystem
+
+commands:
+ rule:
+  description: チュートリアルが行える『チュートリアルワールド』へ移動します
+  usage: /rule
+ lobby:
+  description: 色々な惑星に飛べる『ロビーワールド』へ移動します
+  usage: /lobby
+ main:
+  description: 建築などが行える『メインワールド』へ移動します
+  usage: /main
+ earth:
+  description: 資源などの回収が行える『第一期-地球資源』へ移動します
+  usage: /earth
+ die:
+  description: 自決(自殺)を行います
+  usage: /die
+ info:
+  description: お知らせを確認します
+  usage: /info
+ about:
+  description: 自分の状態を確認します
+  usage: /about
