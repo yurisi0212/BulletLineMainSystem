@@ -5,15 +5,7 @@ use pocketmine\form\Form;
 
 use pocketmine\Player;
 
-use sqmeru\BulletLineMainSystem;
-use sqmeru\BulletLineMainSystem\Form\InfoForm;
-
-class NewsForm implements Form
-{
-    public function __construct(Main $Main)
-    {
-        $this->Main = $Main;
-    }
+class InfoForm implements Form{
 
     public function handleResponse(Player $player, $data): void
     {
@@ -21,7 +13,7 @@ class NewsForm implements Form
             return;
         }
 
-        $player->sendForm(new MenuForm($this->Main));
+        $player->sendForm(new self);
     }
 
     public function jsonSerialize()
