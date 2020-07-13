@@ -2,7 +2,7 @@ name: BulletLineMainSystem
 main: sqmeru\BulletLineMainSystem\BulletLineMainSystem
 
 api: 3.14.0
-version: 1.0.0
+version: 1.0.1
 
 author: sqmeru
 website: https://github.com/sqmeru/BulletLineMainSystem
