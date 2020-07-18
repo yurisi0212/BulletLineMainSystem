@@ -10,7 +10,6 @@ class JoinEvent implements Listener {
     public function onJoin(PlayerJoinEvent $event){
         $player = $event->getPlayer();
         $name = $player->getName();
-        $event->setJoinmessage("§l§a【入室】§r§e" . $name . " Joined the game");
+        $event->setJoinmessage("§l§a" . $name . "がオンラインになりました。");
     }
-
 }

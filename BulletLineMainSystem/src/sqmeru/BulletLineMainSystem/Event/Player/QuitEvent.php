@@ -10,7 +10,7 @@ class QuitEvent implements Listener {
     public function onQuit(PlayerQuitEvent $event){
         $player = $event->getPlayer();
         $name = $player->getName();
-        $event->setQuitMessage("§l§b【退出】§r§e" . $name . " Lefted the game");
+        $event->setQuitMessage("§l§a" . $name . "がオフラインになりました。");
     }
 
 }

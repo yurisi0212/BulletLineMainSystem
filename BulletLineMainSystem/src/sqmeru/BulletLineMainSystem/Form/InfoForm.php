@@ -20,11 +20,11 @@ class InfoForm implements Form{
     {
         return [
             'type' => 'form',
-            'title' => '[BulletLineMainSystem] §bお知らせ',
+            'title' => '§bMainSystem§f>>§c運営チームからのお知らせ',
             'content' => "現在、βテスト中です",
             'buttons' => [
                 [
-                    'text' => '§c戻る'
+                    'text' => '§c閉じる'
                 ]
             ],
         ];

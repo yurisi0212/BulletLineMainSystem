@@ -13,13 +13,13 @@ class dieCommand extends Command {
 
 
     public function __construct(){
-        parent::__construct("die","自決(自殺)を行います","/die");
+        parent::__construct("die","自殺を行います","/die");
     }
 
     public function execute(CommandSender $sender, string $commandLabel, array $args){
 
         if(!$sender instanceof Player){
-            $sender->sendMessage("[BulletLineMainSystem] コンソールから実行できません。");
+            $sender->sendMessage("実行に失敗しました");
             return true;
         }
 

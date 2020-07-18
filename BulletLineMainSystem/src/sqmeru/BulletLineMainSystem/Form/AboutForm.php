@@ -42,7 +42,7 @@ class AboutForm implements Form{
 
         return [
             'type' => 'form',
-            'title' => '[BulletLineMainSystem] §cあなたのデバイス情報',
+            'title' => '§bMainSystem§f>>§cあなたのデバイス情報',
             'content' => '名前 / ' . $this->player->getName() . "\nIP / " . $this->player->getAddress() . "\n現在使用しているデバイス / " . $device[$this->player->getDeviceOS()] . "\nPing / " . $this->player->getPing(),
             'buttons' => [
                 [

@@ -17,7 +17,7 @@ class WarpCommands extends Command{
 
     public function execute(CommandSender $sender, string $commandLabel, array $args){
         if(!$sender instanceof Player){
-            $sender->sendMessage("[BulletLineMainSystem] コンソールから実行できません。");
+            $sender->sendMessage("実行に失敗しました");
             return true;
         }
 

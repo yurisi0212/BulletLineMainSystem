@@ -1,28 +1,26 @@
 <?php
-
-
 namespace sqmeru\BulletLineMainSystem\Command;
-
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\command\utils\CommandException;
+use pocketmine\command\utils\CommmandException;
 use pocketmine\Player;
 use sqmeru\BulletLineMainSystem\Form\AboutForm;
 
-class aboutCommand extends Command{
-
-    public function __construct(){
-        parent::__construct("about", "自分の状態を確認します", "/about");
+class AboutCommand extends Command
+{
+    public function __construct()
+    {
+        perent::__construct("now", "自分のデバイス情報を取得し確認します。", "/now");
     }
 
-    public function execute(CommandSender $sender, string $commandLabel, array $args){
-
-        if(!$sender instanceof Player){
-            $sender->sendMessage("[BulletLineMainSystem] コンソールから実行できません。");
+    public public function execute(CommandSender $sender, string $commandLabel, array $args)
+    {
+        if(!$sender instanceof Player) {
+            $sender->sendMessage("§l§c実行に失敗しました");
             return true;
         }
         $sender->sendForm(new AboutForm($sender));
-        return true;
+        return ture;
     }
 }
