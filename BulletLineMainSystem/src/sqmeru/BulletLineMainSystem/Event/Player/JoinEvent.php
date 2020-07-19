@@ -12,4 +12,3 @@ class JoinEvent implements Listener {
         $name = $player->getName();
         $event->setJoinmessage("§l§a" . $name . "がオンラインになりました。");
     }
-}

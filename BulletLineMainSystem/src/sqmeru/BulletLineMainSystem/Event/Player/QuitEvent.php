@@ -11,6 +11,6 @@ class QuitEvent implements Listener {
         $player = $event->getPlayer();
         $name = $player->getName();
         $event->setQuitMessage("§l§a" . $name . "がオフラインになりました。");
-    }
+
 
 }

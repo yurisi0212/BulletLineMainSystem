@@ -11,12 +11,12 @@ use sqmeru\BulletLineMainSystem\Event\Player\JoinEvent;
 use sqmeru\BulletLineMainSystem\Event\Player\QuitEvent;
 
 class EventManager{
-
-    public static function registerEvents(BulletLineMainSystem $main){
-        //Player
+      public static function registerEvents(BulletLineMainSystem $main){
         Server::getInstance()->getPluginManager()->registerEvents(new JoinEvent(),$main);
         Server::getInstance()->getPluginManager()->registerEvents(new QuitEvent(),$main);
         Server::getInstance()->getPluginManager()->registerEvents(new InteractEvent(),$main);
+        Server::getInstance()->getPluginManager()->registerEvents(new JoinEvent(),$main);
+        Server::getInstance()->getPluginManager()->registerEvents(new QuitEvent(),$main);
     }
 
 }
